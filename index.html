@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="index.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+      
+   </head>
+   <body>
+
+    <div class="container" id="container">
+      <div class="header">
+         <input id="color" type="color" />
+         <select name="scheme" id="scheme">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+         </select>
+         
+         <button id="get-color-btn">Get color scheme</button>
+      </div>
+      <div class="tooltip">
+      <div class="color-container" id="color-container">
+        <!-- color containers here -->
+      </div>
+      <div class="hex" id="hex">
+         <!-- hex values here -->
+      </div>
+      <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+      </div>
+      <script src="index.js"></script>
+   </body>
+</html>

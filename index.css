@@ -1,0 +1,119 @@
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: beige;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: "Montserrat", sans-serif;
+}
+.container {
+   background-color: white;
+   height: auto;
+   width: 60%;
+}
+
+/* header */
+
+.header {
+   display: flex;
+   justify-content: space-around;
+   padding: 1em;
+}
+.header > input {
+   border: none;
+   padding: 0;
+   width: 3.3rem;
+   height: 2.5rem;
+}
+.header > select {
+   border: 1px solid #d1d5db;
+   width: 50%;
+   border-radius: 5px;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+}
+
+.header > button {
+   border: 1px solid #d1d5db;
+   background: none;
+   border-radius: 5px;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+   cursor: pointer;
+   width: min-content(1em);
+}
+
+/* color container */
+
+.color-container {
+   display: flex;
+   height: 40vh;
+   cursor: pointer;
+}
+.color {
+   width: 10000em;
+}
+.col1 {
+   background-color: #f55a5a;
+}
+.col2 {
+   background-color: #2b283a;
+}
+.col3 {
+   background-color: #fbf3ab;
+}
+.col4 {
+   background-color: #aad1b6;
+}
+.col5 {
+   background-color: #a626d3;
+}
+
+.hex {
+   display: flex;
+   justify-content: space-around;
+   cursor: pointer;
+   font-weight: 100;
+   align-items: center;
+   height: 4.0204375em;
+}
+
+/* tooltip */
+.tooltip {
+   position: relative;
+}
+
+.tooltip .tooltiptext {
+   visibility: hidden;
+   color: #fff;
+   border-radius: 6px;
+   padding: 5px;
+   position: absolute;
+   z-index: 1;
+   bottom: 40%;
+   left: 30%;
+
+   opacity: 0;
+   transition: ease-in-out 0.5s;
+}
+.tooltiptext {
+   width: 40%;
+   height: 30%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: rgba(0, 0, 0, 0.08);
+}
+.tooltip .tooltiptext::after {
+   position: absolute;
+   top: 100%;
+   left: 50%;
+}
+
+.tooltip:hover .tooltiptext {
+   visibility: visible;
+   opacity: 1;
+}
